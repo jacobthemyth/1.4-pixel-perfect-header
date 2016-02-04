@@ -1,14 +1,6 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans', helvetica, sans-serif;
+  color: rgba(17, 52, 79, 1);
 }
 
 header {
@@ -16,8 +8,6 @@ header {
   -webkit-background-size: cover;
   background-size: cover;
   height: 523px;
-  color: white;
-
   position: relative;
 }
 
@@ -28,7 +18,7 @@ header::before {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 200, 0.5);
+  background: rgba(46, 118, 178, 0.7);
 }
 
 /* Position these to bring them above overlay */
@@ -59,22 +49,88 @@ nav::after {
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-size: 15px;
-  margin-top: 11px;
-  letter-spacing: .6px;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 0 2px;
+  letter-spacing: .2px;
   position: relative;
   top: -1px;
+}
+
+.logo-container h2 > span {
+  position: relative;
+  left: -2px;
+  letter-spacing: 0;
+}
+
+.logo-container h2 > span > span {
+  letter-spacing: -0.7px;
 }
 
 .logo-container img,
 .logo-container h2 {
   vertical-align: middle;
 }
+
 .header-links {
   float: right;
   list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
 }
 
 .header-links li {
   display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 11px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.header-links li:first-child {
+  position: relative;
+  top: -1px;
+}
+
+.header-links li span {
+  display: inline-block;
+  transform: scaleY(1.5);
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+.header-links li span,
+.header-links li img {
+  vertical-align: middle;
+}
+
+.header-links li img {
+  margin-left: 4px;
+  position: relative;
+  top: 1px;
+  right: 3px;
+}
+
+header h1,
+header h4 {
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  text-shadow: 0 2px 4px rgba(17, 52, 79, 1);
+  text-transform: uppercase;
+  margin: 150px 0 0 0;
+
+  font-size: 104px;
+  line-height: 104px;
+  font-weight: 400;
+  letter-spacing: -3px;
+}
+
+header h4 {
+  font-weight: 400;
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: -1px;
 }
