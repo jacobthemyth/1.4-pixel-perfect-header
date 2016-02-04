@@ -1,0 +1,80 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+header {
+  background: url('http://unsplash.it/1920/1920') center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 523px;
+  color: white;
+
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 200, 0.5);
+}
+
+/* Position these to bring them above overlay */
+nav, h1, h4 {
+  position: relative;
+}
+
+nav {
+  max-width: 1018px;
+  margin: 0 auto;
+
+  padding-right: 02.7504912%;
+}
+
+nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo-container {
+  float: left;
+  margin-top: 6px;
+  margin-left: 14px;
+}
+
+.logo-container h2 {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-top: 11px;
+  letter-spacing: .6px;
+  position: relative;
+  top: -1px;
+}
+
+.logo-container img,
+.logo-container h2 {
+  vertical-align: middle;
+}
+.header-links {
+  float: right;
+  list-style: none;
+}
+
+.header-links li {
+  display: inline-block;
+}
